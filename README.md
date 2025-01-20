@@ -54,6 +54,15 @@ blacklist snd_hda_intel
 blacklist snd_hda_codec_hdmi
 ```
 6. 绑定vfio-pci
+
+运行以下命令，确认核显 PCI 地址
+```
+lspci | grep Audio
+```
+```
+00:1f.3 Audio device: Intel Corporation Alder Lake-N PCH High Definition Audio Controller
+```
+
 ```
 nano /etc/modprobe.d/vfio.conf
 ```
