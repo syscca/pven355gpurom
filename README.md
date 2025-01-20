@@ -56,7 +56,7 @@ blacklist snd_hda_codec_hdmi
 
 运行以下命令，确认 PCI 地址
 ```
-lspci -nn | grep VGA Audio
+lspci -nn | grep VGA
 lspci -nn | grep Audio
 ```
 ```
