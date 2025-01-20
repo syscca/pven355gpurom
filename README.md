@@ -1,7 +1,6 @@
 # pven355gpurom
 
-硬酷R2 MAX PVE N355 PVE WINDOWS 11 核显直通ROM.
-pve-n355-gpu直通HDMI输出显示器带音频
+## 硬酷R2 MAX N355 PVE WINDOWS 11 核显GPU直通ROM带音频输出.
 
 1. 检查核显设备
 运行以下命令，确认核显 PCI 地址（通常是 00:02.0）：
