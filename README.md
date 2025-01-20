@@ -56,7 +56,8 @@ blacklist snd_hda_codec_hdmi
 
 运行以下命令，确认 PCI 地址
 ```
-lspci | grep Audio
+lspci -nn | grep VGA Audio
+lspci -nn | grep Audio
 ```
 ```
 00:1f.3 Audio device: Intel Corporation Alder Lake-N PCH High Definition Audio Controller
