@@ -18,11 +18,11 @@ nano /etc/default/grub
 ```
 在 GRUB_CMDLINE_LINUX_DEFAULT 中添加以下参数：
 ```
-intel_iommu=on iommu=pt
+intel_iommu=on iommu=pt video=efifb:off
 ```
 完整示例：
 ```
-GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt video=efifb:off"
 ```
 保存并更新 GRUB：
 ```
