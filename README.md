@@ -188,6 +188,12 @@ ls -lh ~/UEFI/edk2/Build/VfioIgdPkg/RELEASE_GCC/X64/*.efi
 将这两个文件和你从 BIOS 提取的 `IntelGopDriver.efi` 放在一起，使用 `EfiRom` 合并（建议在 Windows 下执行，Linux 版也可用）：
 
 ```bash
+cd ~/UEFI/edk2/BaseTools/BinWrappers/PosixLike
+```
+```bash
+cp ~/UEFI/edk2/Build/VfioIgdPkg/RELEASE_GCC/X64/*.efi ./
+```
+```bash
 EfiRom -e IntelGopDriver.efi IgdAssignmentDxe.efi PlatformGOPPolicy.efi \
        -f 0x8086 -i 0x46d3 -o n355_igd.rom
 ```
