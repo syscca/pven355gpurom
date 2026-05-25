@@ -169,12 +169,12 @@ build -p VfioIgdPkg/VfioIgdPkg.dsc \
 
 编译成功后，文件位于：
 ```bash
-~/UEFI/edk2/Build/VfioIgdPkg/RELEASE_GCC5/X64/
+~/UEFI/edk2/Build/VfioIgdPkg/RELEASE_GCC/X64/
 ```
 
 你可以用以下命令确认：
 ```bash
-ls -lh ~/UEFI/edk2/Build/VfioIgdPkg/RELEASE_GCC5/X64/*.efi
+ls -lh ~/UEFI/edk2/Build/VfioIgdPkg/RELEASE_GCC/X64/*.efi
 ```
 
 应该会看到：
@@ -205,7 +205,7 @@ hexdump -C n355_igd.rom | head -1
 | 错误 | 解决方法 |
 |------|----------|
 | `build: command not found` | 确保在 edk2 目录下执行了 `source edksetup.sh` |
-| `Tool chain [GCC] is not defined` | 尝试改用 `-t GCC5` 或检查 `gcc --version` |
+| `Tool chain [GCC] is not defined` | 尝试改用 `-t GCC` 或检查 `gcc --version` |
 | `fatal error: gnu/stubs-32.h: No such file` | `sudo apt install gcc-multilib` |
 | `IgdAssignment.inf` 找不到 | 确认路径 `VfioIgdPkg/IgdAssignmentDxe/IgdAssignment.inf` 存在 |
 
