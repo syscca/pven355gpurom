@@ -111,7 +111,7 @@ nano /etc/pve/qemu-server/<VMID>.conf
 
 自行生成命令，用UBU提取BIOS生成IntelGopDriver.efi，IgdAssignmentDxe.efi和PlatformGOPPolicy.efi用VfioIgdPkg编译。
 ```
-.\EfiRom.exe -e .\IntelGopDriver.efi .\IgdAssignmentDxe.efi .\PlatformGOPPolicy.efi -f 0x8086 -i 0x46d3 -o n355_igd.rom
+.\EfiRom.exe -e .\IntelGopDriver.efi .\IgdAssignmentDxe.efi .\PlatformGopPolicy.efi -f 0x8086 -i 0x46d3 -o n355_igd.rom
 ```
 
 # 下面是AI说明
@@ -194,7 +194,7 @@ cd ~/UEFI/edk2/BaseTools/BinWrappers/PosixLike
 cp ~/UEFI/edk2/Build/VfioIgdPkg/RELEASE_GCC/X64/*.efi ./
 ```
 ```bash
-EfiRom -e IntelGopDriver.efi IgdAssignmentDxe.efi PlatformGOPPolicy.efi \
+EfiRom -e IntelGopDriver.efi IgdAssignmentDxe.efi PlatformGopPolicy.efi.efi \
        -f 0x8086 -i 0x46d3 -o n355_igd.rom
 ```
 
