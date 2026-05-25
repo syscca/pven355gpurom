@@ -194,7 +194,7 @@ cd ~/UEFI/edk2/BaseTools/BinWrappers/PosixLike
 cp ~/UEFI/edk2/Build/VfioIgdPkg/RELEASE_GCC/X64/*.efi ./
 ```
 ```bash
-EfiRom -e IntelGopDriver.efi IgdAssignmentDxe.efi PlatformGopPolicy.efi.efi \
+EfiRom -e IntelGopDriver.efi IgdAssignmentDxe.efi PlatformGopPolicy.efi \
        -f 0x8086 -i 0x46d3 -o n355_igd.rom
 ```
 
