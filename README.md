@@ -114,7 +114,8 @@ nano /etc/pve/qemu-server/<VMID>.conf
 .\EfiRom.exe -e .\IntelGopDriver.efi .\IgdAssignmentDxe.efi .\PlatformGOPPolicy.efi -f 0x8086 -i 0x46d3 -o n355_igd.rom
 ```
 
-下面是AI说明
+# 下面是AI说明
+
 好的，针对你的需求，我将提供一份**只编译 `IgdAssignmentDxe.efi` 和 `PlatformGOPPolicy.efi` 两个模块**的精简指南。你不需要编译整个 DSC 文件，只需单独指定每个模块的 INF 路径即可。
 
 ---
@@ -214,6 +215,5 @@ hexdump -C n355_igd.rom | head -1
 
 按照上述步骤，你就能获得所需的两个 EFI 驱动文件，且无需编译整个庞大的 `VfioIgdPkg` 包。如果编译中遇到具体错误，请提供输出信息，我会帮你分析。
 
-PlatformGOPPolicy.efi
 
-🧩
+
