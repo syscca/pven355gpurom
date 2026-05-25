@@ -109,7 +109,7 @@ nano /etc/pve/qemu-server/<VMID>.conf
 100.conf
 ```
 
-自行生成命令，用UBU提取BIOS生成IntelGopDriver.efi，IgdAssignmentDxe.efi和PlatformGOPPolicy.efi用https://github.com/tomitamoeko/VfioIgdPkg编译。
+自行生成命令，用UBU提取BIOS生成IntelGopDriver.efi，IgdAssignmentDxe.efi和PlatformGOPPolicy.efi用VfioIgdPkg编译。
 ```
 .\EfiRom.exe -e .\IntelGopDriver.efi .\IgdAssignmentDxe.efi .\PlatformGOPPolicy.efi -f 0x8086 -i 0x46d3 -o n355_igd.rom
 ```
